@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PKHosting VPS Hosting</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">PKHosting</h1>
+      <nav aria-label="Primary">
+        <a href="#plans">Plans</a>
+        <a href="#compare">Compare</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container">
+        <h2>PKHosting VPS Hosting</h2>
+        <p class="lede">Fast, local VPS with predictable pricing and PKR billing.</p>
+        <div class="cta-row">
+          <a class="cta" href="#plans">See plans</a>
+          <a class="cta ghost" href="#contact">Talk to sales</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls container" aria-label="Billing and currency controls">
+      <div class="toggle" role="radiogroup" aria-label="Billing period">
+        <label class="period">
+          <input type="radio" name="period" value="monthly" checked>
+          Monthly
+        </label>
+        <label class="period">
+          <input type="radio" name="period" value="annual">
+          Annually
+        </label>
+      </div>
+
+      <div class="currency">
+        <label for="currency">Currency</label>
+        <select id="currency" name="currency">
+          <option value="PKR">PKR</option>
+          <option value="USD">USD</option>
+          <option value="GBP">GBP</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="plans" class="plans container" aria-label="Pricing plans">
+      <!-- Prices hard-coded in PKR for no-JS / offline access -->
+      <div class="plan-grid" role="list">
+        <article class="card" role="listitem" data-plan="Starter" data-month="2400">
+          <h3>Starter</h3>
+          <p class="price">Rs 2,400 <small>/mo</small></p>
+          <ul class="features">
+            <li>1 vCPU</li>
+            <li>1 GB RAM</li>
+            <li>25 GB SSD</li>
+          </ul>
+          <button class="select">Choose Starter</button>
+        </article>
+
+        <article class="card popular" role="listitem" data-plan="Growth" data-month="4800">
+          <span class="badge">Most popular</span>
+          <h3>Growth</h3>
+          <p class="price">Rs 4,800 <small>/mo</small></p>
+          <ul class="features">
+            <li>2 vCPU</li>
+            <li>4 GB RAM</li>
+            <li>80 GB SSD</li>
+          </ul>
+          <button class="select">Choose Growth</button>
+        </article>
+
+        <article class="card" role="listitem" data-plan="Scale" data-month="9600">
+          <h3>Scale</h3>
+          <p class="price">Rs 9,600 <small>/mo</small></p>
+          <ul class="features">
+            <li>4 vCPU</li>
+            <li>8 GB RAM</li>
+            <li>160 GB SSD</li>
+          </ul>
+          <button class="select">Choose Scale</button>
+        </article>
+
+        <article class="card" role="listitem" data-plan="Dedicated" data-month="19500">
+          <h3>Dedicated Core</h3>
+          <p class="price">Rs 19,500 <small>/mo</small></p>
+          <ul class="features">
+            <li>4 dedicated cores</li>
+            <li>16 GB RAM</li>
+            <li>320 GB NVMe</li>
+          </ul>
+          <button class="select">Choose Dedicated Core</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="compare" class="compare container">
+      <h3>Compare plans</h3>
+      <div class="table-wrap" role="table" aria-label="Plan comparison">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Starter</th>
+              <th>Growth</th>
+              <th>Scale</th>
+              <th>Dedicated Core</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th>vCPU</th><td>1</td><td>2</td><td>4</td><td>4</td></tr>
+            <tr><th>RAM</th><td>1 GB</td><td>4 GB</td><td>8 GB</td><td>16 GB</td></tr>
+            <tr><th>Storage</th><td>25 GB SSD</td><td>80 GB SSD</td><td>160 GB SSD</td><td>320 GB NVMe</td></tr>
+            <tr><th>Bandwidth</th><td>2 TB</td><td>3 TB</td><td>4 TB</td><td>5 TB</td></tr>
+            <tr><th>Private Network</th><td>—</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+            <tr><th>Backups</th><td>Optional</td><td>Optional</td><td>Included</td><td>Included</td></tr>
+            <tr><th>Managed</th><td>—</td><td>—</td><td>Available</td><td>Available</td></tr>
+            <tr><th>Uptime SLA</th><td>99.9%</td><td>99.9%</td><td>99.95%</td><td>99.99%</td></tr>
+            <tr><th>IPv4</th><td>1</td><td>1</td><td>2</td><td>2</td></tr>
+            <tr><th>Support</th><td>Email</td><td>Email + Chat</td><td>Email + Chat</td><td>Priority</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="faq" class="faq container">
+      <h3>FAQ</h3>
+      <details>
+        <summary>What is billed monthly vs yearly?</summary>
+        <p>Choose Monthly to pay each month. Annually charges 10 months for 12 and shows per-month equivalent.</p>
+      </details>
+      <details>
+        <summary>Can I change plans later?</summary>
+        <p>Yes — resize your VPS and billing adjusts on next invoice.</p>
+      </details>
+      <details>
+        <summary>Do you support Pakistani payment methods?</summary>
+        <p>We accept local bank transfers, JazzCash, Easypaisa, and major cards. See footer for choices.</p>
+      </details>
+      <details>
+        <summary>Do these prices include tax?</summary>
+        <p>Prices are listed without government taxes which may apply at checkout.</p>
+      </details>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <div>
+      <h4>Payment methods</h4>
+      <p>We accept: Bank transfer, Visa/Mastercard (card via local gateway), JazzCash, Easypaisa, Payoneer, PayPal (recommended for international customers).</p>
+      <p class="justify">We selected these 6 from PKHosting's 8 to focus on methods commonly used by Pakistani VPS buyers and that can be offered without additional third-party branding on this static page.</p>
+    </div>
+    <small>© PKHosting — demo pricing only</small>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
